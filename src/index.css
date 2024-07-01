@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Arabella';
+  src: url('/fonts/arabella.woff2') format('woff2'),
+    url('/fonts/arabella.woff') format('woff'),
+    url('/fonts/arabella.ttf') format('truetype'),
+    url('/fonts/arabella.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply font-default;
+}
+
+:root {
+  font-family: poppins;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+
+}
