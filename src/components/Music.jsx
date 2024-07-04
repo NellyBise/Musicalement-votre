@@ -42,7 +42,8 @@ export default function Music() {
           volumePlacement="top"
           color="#cfcfcf"
           sliderColor="#94b9ff"
-          className="rounded-none w-full bg-main-color"
+          backgroundColor="#072550"
+          className="rounded-none w-full"
         />
       </div>
       <ul className="w-1/3 border-main-color border-2">

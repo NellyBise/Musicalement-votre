@@ -15,19 +15,31 @@ export default function Medias() {
         <ul className="flex gap-8 uppercase text-main-color text-xl">
           <NavLink
             to="/mediatheque/photos"
-            className="bg-light-blue p-2 rounded hover:bg-main-color hover:text-white duration-500"
+            className={({ isActive }) =>
+              isActive
+                ? 'p-2 rounded bg-main-color text-white'
+                : 'bg-light-blue p-2 rounded hover:bg-main-color hover:text-white duration-500'
+            }
           >
             <li>photos</li>
           </NavLink>
           <NavLink
             to="/mediatheque/videos"
-            className="bg-light-blue p-2 rounded hover:bg-main-color hover:text-white duration-500"
+            className={({ isActive }) =>
+              isActive
+                ? 'p-2 rounded bg-main-color text-white'
+                : 'bg-light-blue p-2 rounded hover:bg-main-color hover:text-white duration-500'
+            }
           >
             <li>vidéos</li>
           </NavLink>
           <NavLink
             to="/mediatheque/musique"
-            className="bg-light-blue p-2 rounded hover:bg-main-color hover:text-white duration-500"
+            className={({ isActive }) =>
+              isActive
+                ? 'p-2 rounded bg-main-color text-white'
+                : 'bg-light-blue p-2 rounded hover:bg-main-color hover:text-white duration-500'
+            }
           >
             <li>musiques</li>
           </NavLink>

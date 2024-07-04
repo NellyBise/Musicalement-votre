@@ -62,17 +62,17 @@ export default function Home() {
         </h2>
         <div className="flex gap-4">
           <LinkCard
-            link="/prestations"
+            link="prestations"
             image={prestations}
             text="Un large éventail de prestations"
           />
           <LinkCard
-            link="/materiel"
+            link="materiel"
             image={materiel}
             text="Un matériel professionnel de qualité"
           />
           <LinkCard
-            link="/medias"
+            link="mediatheque/photos"
             image={mediatheque}
             text="Retrouvez tous mes médias : photos, vidéos et musique"
           />

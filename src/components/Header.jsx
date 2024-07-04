@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import logo from '../../public/Logo.png'
 
 export default function Header() {
@@ -56,12 +57,17 @@ export default function Header() {
             </li>
           ))}
           <li>
-            <a
-              href="/#contact"
-              className="hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 duration-500"
+            <HashLink
+              smooth
+              to="/#contact"
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-title-color border-b-title-color border-b-4 pb-2'
+                  : 'hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 duration-500'
+              }
             >
               Contact
-            </a>
+            </HashLink>
           </li>
         </ul>
       </nav>
