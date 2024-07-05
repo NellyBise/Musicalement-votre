@@ -1,5 +1,6 @@
 import { AudioPlayer } from 'react-audio-play'
 import { useState } from 'react'
+import photo from '../../public/galerie/04.jpg'
 
 const playList = [
   {
@@ -32,33 +33,38 @@ export default function Music() {
   }
 
   return (
-    <article className="flex flex-col items-center w-full my-12">
-      <div className="flex items-center justify-between text-white bg-main-color w-1/3">
-        <h2 className="p-2">{Track.name}</h2>
-        <AudioPlayer
-          src={Track.src}
-          autoPlay="true"
-          volume={50}
-          volumePlacement="top"
-          color="#cfcfcf"
-          sliderColor="#94b9ff"
-          backgroundColor="#072550"
-          className="rounded-none w-full"
-        />
+    <article className="flex w-full my-12">
+      <div className="w-1/3 mx-4">
+        <img src={photo} alt="Fabrice sur scène" className="rounded-md" />
       </div>
-      <ul className="w-1/3 border-main-color border-2">
-        {playList.map((track) => (
-          <li
-            key={track.id}
-            onClick={() => toggleTrack(track.id)}
-            className={`text-main-color p-2 hover:bg-light-color cursor-pointer ${
-              track.id === Track.id ? 'bg-light-color' : ''
-            }`}
-          >
-            {track.name}
-          </li>
-        ))}
-      </ul>
+      <div className="w-2/3">
+        <div className="flex items-center justify-between text-white bg-main-color mx-4 rounded-t-md overflow-hidden	">
+          <h2 className="p-2">{Track.name}</h2>
+          <AudioPlayer
+            src={Track.src}
+            autoPlay="true"
+            volume={50}
+            volumePlacement="top"
+            color="#FFFFFF"
+            sliderColor="#A8E2E3"
+            backgroundColor="#072550"
+            className="rounded-tr-md w-full"
+          />
+        </div>
+        <ul className="border-main-color border-2 rounded-b-md overflow-hidden	 mx-4">
+          {playList.map((track) => (
+            <li
+              key={track.id}
+              onClick={() => toggleTrack(track.id)}
+              className={`text-main-color p-2 hover:bg-light-blue cursor-pointer ${
+                track.id === Track.id ? 'bg-light-blue' : 'bg-white'
+              }`}
+            >
+              {track.name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </article>
   )
 }

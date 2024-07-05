@@ -27,7 +27,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="w-screen h-full py-2 px-4 border-b-4 border-transparent flex flex-col items-center justify-center bg-white drop-shadow-lg">
+    <header className="w-screen h-full py-2 px-4 border-b-4 border-transparent flex flex-col items-center justify-center bg-light-color drop-shadow-lg">
       <NavLink to="/" className="flex gap-4">
         <img src={logo} alt="" className="h-24 mb-2" />
 
@@ -49,9 +49,10 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive
                     ? 'text-title-color border-b-title-color border-b-4 pb-2'
-                    : 'hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 duration-500'
+                    : 'hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 origin-left duration-500'
                 }
               >
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-neutral-700 origin-bottom-right transform transition duration-200 ease-out scale-x-0 group-hover:scale-x-100 group-hover:origin-bottom-left"></span>
                 {link.name}
               </NavLink>
             </li>
@@ -60,11 +61,7 @@ export default function Header() {
             <HashLink
               smooth
               to="/#contact"
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-title-color border-b-title-color border-b-4 pb-2'
-                  : 'hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 duration-500'
-              }
+              className="hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 duration-500"
             >
               Contact
             </HashLink>

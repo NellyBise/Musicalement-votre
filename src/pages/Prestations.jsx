@@ -4,8 +4,8 @@ import guitar from '../assets/guitar.png'
 
 export default function Prestations() {
   return (
-    <section>
-      <article className="relative left-1/2 -translate-x-1/2 flex h-screen w-screen">
+    <section className="bg-[url('./music5.png')] bg-no-repeat bg-contain bg-top-left">
+      <article className="relative left-1/2 -translate-x-1/2 flex h-screen w-screen bg-light-color/85">
         <div className="w-1/2 relative">
           <div className="absolute h-0 w-0 border-r-[40vw] border-b-[90vh] border-b-light-blue border-r-transparent"></div>
           <ul className="text-main-color text-2xl flex flex-col justify-around mt-4 h-4/5 w-full">
@@ -36,7 +36,7 @@ export default function Prestations() {
             />
           </div>
         </div>
-        <div className="relative px-12 w-1/2 h-4/5 flex flex-col justify-center items-center text-center text-main-color text-2xl px-12 gap-2">
+        <div className="relative mx-12 h-4/5 w-1/2 flex flex-col justify-center items-center text-center text-main-color text-2xl gap-2">
           <p className="">
             Vous cherchez une animation dynamique et personnalisée pour vos
             événements spéciaux ?

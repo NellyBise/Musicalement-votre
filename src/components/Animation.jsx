@@ -1,6 +1,6 @@
-import DJ from '../assets/DJ.jpg'
+import DJ from '../assets/DJ2.png'
 import Card from './Card'
-import karaoke from '../assets/karaoke.jpg'
+import karaoke from '../assets/karaoke2.png'
 
 const playListKaraoke = [
   {

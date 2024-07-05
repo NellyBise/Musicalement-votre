@@ -8,24 +8,24 @@ import mediatheque from '../assets/mediatheque.jpg'
 export default function Home() {
   return (
     <section className="flex flex-col items-center">
-      <article className="flex pb-20 h-screen">
-        <div className="w-3/5 h-3/5 flex flex-col my-auto items-center">
+      <article className="flex pb-20 h-screen bg-[url('./music.png')] bg-no-repeat bg-contain">
+        <div className="w-3/5 h-3/5 flex flex-col my-auto items-center bg-gradient-to-r from-75% from-transparent to-light-color/80">
           <div className="h-full w-2/5 bg-light-blue relative">
             <img
               src={photo}
               alt="Fabrice sur scène"
-              className="absolute -left-12 top-12 h-full w-full object-cover"
+              className="absolute -left-6 top-6 h-full w-full object-cover border-2 border-black"
             />
           </div>
         </div>
-        <div className="w-3/5 flex flex-col justify-center">
+        <div className="w-3/5 px-4 bg-gradient-to-r from-light-color/80 to-light-color/100 via-40% via-light-color/100 flex flex-col justify-center">
           <h2 className="text-8xl text-title-color font-arabella">
             Fabrice Bise
           </h2>
           <h3 className="text-4xl text-main-color font-bold">
             Musicien, chanteur et DJ
           </h3>
-          <div className="text-main-color my-7 gap-2">
+          <div className="text-main-color my-7 gap-2 leading-8 font-semibold">
             <p>
               Guitariste et chanteur passionné avec une riche expérience
               scénique. J&rsquo;ai joué dans divers orchestres et groupes,
@@ -40,7 +40,7 @@ export default function Home() {
             </p>
           </div>
           <a
-            className="text-center w-max pointer-events-auto rounded bg-light-blue px-3 py-1 text-s md:text-lg  drop-shadow-lg duration-300 hover:bg-light-blue/50"
+            className="text-center w-max pointer-events-auto rounded bg-light-blue px-3 py-1 text-s md:text-lg  drop-shadow-lg hover:bg-main-color hover:text-white duration-500"
             href="mailto:musicalementvotre66@gmail.com"
             aria-label="cliquer pour envoyer un email"
           >
