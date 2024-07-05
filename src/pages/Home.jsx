@@ -8,7 +8,7 @@ import mediatheque from '../assets/mediatheque.jpg'
 export default function Home() {
   return (
     <section className="flex flex-col items-center">
-      <article className="flex pb-20 h-screen bg-[url('./music.png')] bg-no-repeat bg-contain">
+      <article className="flex pb-20 h-screen bg-[url('/music.png')] bg-no-repeat bg-contain">
         <div className="w-3/5 h-3/5 flex flex-col my-auto items-center bg-gradient-to-r from-75% from-transparent to-light-color/80">
           <div className="h-full w-2/5 bg-light-blue relative">
             <img

@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <article
-      className="flex flex-col items-center w-1/2 py-12 md:py-24 bg-[url('./music3.png')] bg-no-repeat bg-contain bg-center"
+      className="flex flex-col items-center w-1/2 py-12 md:py-24 bg-[url('/music3.png')] bg-no-repeat bg-contain bg-center"
       id="contact"
     >
       <h2 className="text-4xl w-full text-center p-4 text-main-color font-bold bg-light-color/80 ">

@@ -4,7 +4,7 @@ import guitar from '../assets/guitar.png'
 
 export default function Prestations() {
   return (
-    <section className="bg-[url('./music5.png')] bg-no-repeat bg-contain bg-top-left">
+    <section className="bg-[url('/music5.png')] bg-no-repeat bg-contain bg-top-left">
       <article className="relative left-1/2 -translate-x-1/2 flex h-screen w-screen bg-light-color/85">
         <div className="w-1/2 relative">
           <div className="absolute h-0 w-0 border-r-[40vw] border-b-[90vh] border-b-light-blue border-r-transparent"></div>
