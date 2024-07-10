@@ -12,7 +12,7 @@ export default {
       'main-color': '#072550',
       'title-color': '#E5232E',
       'light-blue': '#A8E2E3',
-      'light-color': '#F6F0F0',
+      'light-color': '#FBF9F9',
       white: '#FFFFFF',
       black: '#000000',
       transparent: 'transparent',

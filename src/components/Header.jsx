@@ -27,32 +27,25 @@ export default function Header() {
   ]
 
   return (
-    <header className="w-screen h-full py-2 px-4 border-b-4 border-transparent flex flex-col items-center justify-center bg-light-color drop-shadow-lg">
-      <NavLink to="/" className="flex gap-4">
-        <img src={logo} alt="" className="h-24 mb-2" />
-
-        <div className="flex flex-col items-center gap-2">
-          <h1 className="text-6xl font-bold text-title-color font-arabella">
-            Musicalement Votre
-          </h1>
-          <h2 className="text-main-color text-center text-2xl">
-            DJ - KARAOKÉ - ANIMATION
-          </h2>
-        </div>
+    <header className="fixed top-0 z-40 w-screen h-20 px-8 border-b-4 border-transparent flex items-center justify-between bg-light-color drop-shadow-lg">
+      <NavLink to="/" className="flex items-center gap-4">
+        <img src={logo} alt="" className="h-16" />
+        <h1 className="text-4xl font-bold text-title-color font-arabella">
+          Musicalement Votre
+        </h1>
       </NavLink>
       <nav>
-        <ul className="flex gap-16 text-xl text-main-color uppercase mt-8">
+        <ul className="flex items-center h-20 gap-16 text-xl text-main-color uppercase">
           {links.map((link) => (
             <li key={link.name}>
               <NavLink
                 to={link.route}
                 className={({ isActive }) =>
                   isActive
-                    ? 'text-title-color border-b-title-color border-b-4 pb-2'
-                    : 'hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 origin-left duration-500'
+                    ? 'text-title-color border-b-title-color border-b-4 pb-6'
+                    : 'hover:text-title-color border-b-transparent border-b-4 pb-6 hover:border-b-title-color duration-500'
                 }
               >
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-neutral-700 origin-bottom-right transform transition duration-200 ease-out scale-x-0 group-hover:scale-x-100 group-hover:origin-bottom-left"></span>
                 {link.name}
               </NavLink>
             </li>
@@ -61,7 +54,7 @@ export default function Header() {
             <HashLink
               smooth
               to="/#contact"
-              className="hover:text-title-color border-b-transparent border-b-4 hover:border-b-title-color pb-2 duration-500"
+              className="hover:text-title-color border-b-transparent border-b-4 pb-6 hover:border-b-title-color pb-2 duration-500"
             >
               Contact
             </HashLink>

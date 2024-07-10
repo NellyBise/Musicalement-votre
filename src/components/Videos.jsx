@@ -7,10 +7,10 @@ export default function Videos() {
           seul contenant, possibilité de playlists à thème et plusieurs
           contenants, au choix
         </h2>
-        <div className="min-w-[800px] flex justify-center">
+        <div className="flex justify-center">
           <iframe
-            width="560"
-            height="315"
+            width="800"
+            height="450"
             src="https://www.youtube.com/embed/zxrr9appK7M?si=j7DdQ6fVesqMd5TB"
             title="YouTube video player"
             frameborder="0"

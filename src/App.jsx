@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="max-w-[1240px] px-12 mx-auto">
+      <main>
         <ScrollToTop />
         <Outlet />
       </main>

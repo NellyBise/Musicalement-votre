@@ -1,25 +1,28 @@
+import notes from '../assets/musical-notes.svg'
+
 export default function Presentation() {
   return (
-    <section>
-      <h2 className="flex justify-center text-4xl text-main-color font-bold uppercase my-12">
+    <section className="flex flex-col items-center mt-24 max-h-[1440px] px-8">
+      <h2 className="text-4xl text-main-color font-bold uppercase my-12 flex gap-2">
+        <img src={notes} alt="" className="h-8" />
         Présentation
       </h2>
-      <div className="min-w-[800px] flex justify-center">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/PV6exZDmH9U?si=jg5cPhRuZnnmXITD"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <h2 className="flex justify-center text-4xl text-main-color font-bold uppercase my-12">
+
+      <iframe
+        className="w-[800px] h-[450px]"
+        src="https://www.youtube.com/embed/PV6exZDmH9U?si=jg5cPhRuZnnmXITD"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <h2 className="flex gap-2 text-4xl text-main-color font-bold uppercase my-12">
+        <img src={notes} alt="" className="h-8" />
         MON PARCOURS
       </h2>
-      <div className="flex flex-col text-main-color my-7 gap-4">
+      <div className="flex flex-col text-main-color my-7 gap-4 max-w-[1440px]">
         <p className="">
           Mon parcours musical a commencé à l&rsquo;âge de 7 ans lorsque
           j&rsquo;ai pris mes premières leçons de guitare. Pendant huit ans,

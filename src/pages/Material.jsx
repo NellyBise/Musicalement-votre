@@ -1,11 +1,11 @@
 import sound from '../assets/sound.png'
 import light from '../assets/lumiere.png'
-import ecran from '../assets/ecran.png'
+import ecran from '../assets/materiel.png'
 import Card from '../components/Card'
 
 export default function Material() {
   return (
-    <section>
+    <section className="mt-24 max-h-[1440px] px-8">
       <h2 className="flex justify-center text-4xl text-main-color font-bold uppercase my-12">
         Un équipement professionnel
       </h2>
@@ -20,7 +20,9 @@ export default function Material() {
           image={sound}
           text={
             <div className="h-80">
-              <h3 className="text-xl text-center m-2">Son</h3>
+              <h3 className="text-xl text-center font-semibold uppercase m-4">
+                Son
+              </h3>
               <ul className="list-disc list-inside p-4">
                 <li>HK Elements 3,2 Kwatts modulable</li>
                 <li>Micro HF Shure</li>
@@ -39,7 +41,9 @@ export default function Material() {
           image={light}
           text={
             <div className="h-80">
-              <h3 className="text-xl text-center m-2">Lumières</h3>
+              <h3 className="text-xl text-center uppercase font-semibold m-4">
+                Lumières
+              </h3>
               <ul className="list-disc list-inside p-4">
                 <li>8 pars slims 5x10W</li>
                 <li>2 effets strob</li>
@@ -56,7 +60,9 @@ export default function Material() {
           image={ecran}
           text={
             <div className="h-80">
-              <div className="text-xl text-center m-2">Autres</div>
+              <h3 className="text-xl text-center uppercase font-semibold m-4">
+                Autres
+              </h3>
               <ul className="list-disc list-inside p-4">
                 <li>Pont 2 points 1M50</li>
                 <li>Table support DJ</li>

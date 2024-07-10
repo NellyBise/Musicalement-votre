@@ -1,16 +1,19 @@
+import notes from '../assets/musical-notes.svg'
+
 export default function Contact() {
   return (
     <article
-      className="flex flex-col items-center w-1/2 py-12 md:py-24 bg-[url('/music3.png')] bg-no-repeat bg-contain bg-center"
+      className="flex flex-col items-center w-1/2 max-w-[700px] my-12 md:my-24 bg-[url('/music3.png')] bg-no-repeat bg-contain bg-center"
       id="contact"
     >
-      <h2 className="text-4xl w-full text-center p-4 text-main-color font-bold bg-light-color/80 ">
+      <h2 className="flex gap-2 text-4xl w-full justify-center p-4 text-main-color font-bold bg-light-color/80 ">
+        <img src={notes} alt="" className="h-8" />
         CONTACTEZ-MOI
       </h2>
       <form className="pt-20 flex flex-col w-full px-6 text-main-color font-semibold bg-gradient-to-b from-light-color/80 via-transparent via-30%">
         <label htmlFor="name">Votre nom</label>
         <input
-          className="p-2 drop-shadow-lg bg-white rounded"
+          className="p-2 drop-shadow-lg bg-white/95 rounded"
           id="name"
           required
           autoComplete="name"
@@ -22,7 +25,7 @@ export default function Contact() {
           Votre adresse email
         </label>
         <input
-          className="p-2 drop-shadow-lg bg-white rounded"
+          className="p-2 drop-shadow-lg bg-white/95 rounded"
           id="email"
           required
           autoComplete="email"
@@ -34,7 +37,7 @@ export default function Contact() {
           Votre message
         </label>
         <textarea
-          className="h-36 p-2 drop-shadow-lg bg-white rounded"
+          className="h-36 p-2 drop-shadow-lg bg-white/95 rounded"
           id="message"
           required
           name="message"

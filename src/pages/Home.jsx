@@ -1,31 +1,44 @@
-import photo from '../assets/photo.jpg'
+import photo from '../assets/photo2.jpg'
 import Contact from '../components/Contact'
 import LinkCard from '../components/LinkCard'
 import prestations from '../assets/prestations.jpg'
 import materiel from '../assets/materiel.jpg'
 import mediatheque from '../assets/mediatheque.jpg'
+import notes from '../assets/musical-notes.svg'
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center">
+    <section className="area flex flex-col items-center mt-24">
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <article className="flex pb-20 h-screen bg-[url('/music.png')] bg-no-repeat bg-contain">
         <div className="w-3/5 h-3/5 flex flex-col my-auto items-center bg-gradient-to-r from-75% from-transparent to-light-color/80">
           <div className="h-full w-2/5 bg-light-blue relative">
             <img
               src={photo}
               alt="Fabrice sur scène"
-              className="absolute -left-6 top-6 h-full w-full object-cover border-2 border-black"
+              className="absolute -left-6 top-6 h-full w-full object-cover"
             />
           </div>
         </div>
-        <div className="w-3/5 px-4 bg-gradient-to-r from-light-color/80 to-light-color/100 via-40% via-light-color/100 flex flex-col justify-center">
+        <div className="w-3/5 px-4 gap-2 bg-gradient-to-r from-light-color/80 to-light-color/100 via-25% via-light-color/100 flex flex-col justify-center">
           <h2 className="text-8xl text-title-color font-arabella">
             Fabrice Bise
           </h2>
           <h3 className="text-4xl text-main-color font-bold">
             Musicien, chanteur et DJ
           </h3>
-          <div className="text-main-color my-7 gap-2 leading-8 font-semibold">
+          <div className="text-main-color my-7 leading-8 font-semibold">
             <p>
               Guitariste et chanteur passionné avec une riche expérience
               scénique. J&rsquo;ai joué dans divers orchestres et groupes,
@@ -48,16 +61,20 @@ export default function Home() {
           </a>
         </div>
       </article>
+
       <article className="my-12">
-        <h2 className="flex justify-center text-4xl text-main-color font-bold uppercase mb-12">
+        <h2 className="flex gap-2 justify-center text-4xl text-main-color font-bold uppercase mb-12">
+          <img src={notes} alt="" className="h-8" />
           actualités
         </h2>
         <p className="text-title-color bg-light-blue">
           Afficher les dernières dates ou lien posts facebook ?
         </p>
       </article>
+
       <article className="my-12">
-        <h2 className="flex justify-center text-4xl text-main-color font-bold uppercase mb-12">
+        <h2 className="flex gap-2 justify-center text-4xl text-main-color font-bold uppercase mb-12">
+          <img src={notes} alt="" className="h-8" />
           En savoir plus
         </h2>
         <div className="flex gap-4">

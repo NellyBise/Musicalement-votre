@@ -1,6 +1,6 @@
-import DJ from '../assets/DJ2.png'
+import DJ from '../assets/DJ3.png'
 import Card from './Card'
-import karaoke from '../assets/karaoke2.png'
+import karaoke from '../assets/karaoke4.png'
 
 const playListKaraoke = [
   {
@@ -17,12 +17,12 @@ const playListKaraoke = [
 
 export default function Animation() {
   return (
-    <article className="flex gap-4 justify-center">
+    <article className="flex gap-8 justify-center mb-12">
       <Card
         image={DJ}
         text={
           <div className="p-4 text-main-color h-96">
-            <h2 className="uppercase text-2xl text-title-color text-center font-bold self-center mb-4">
+            <h2 className="uppercase text-2xl text-center font-bold self-center mb-4">
               DJ Animation
             </h2>
             <h3 className="text-xl">Quelques références</h3>
@@ -47,8 +47,8 @@ export default function Animation() {
       <Card
         image={karaoke}
         text={
-          <div className="text-main-color p-4 flex flex-col justify-center h-96">
-            <h2 className="uppercase text-2xl text-title-color font-bold self-center mb-4">
+          <div className="text-main-color  text-center p-4 flex flex-col h-96">
+            <h2 className="uppercase text-2xl font-bold self-center mb-4">
               Karaoké
             </h2>
             <p>Découvrez mes répertoires karaoké classés par langue :</p>
@@ -56,7 +56,7 @@ export default function Animation() {
               {playListKaraoke.map((list) => (
                 <li
                   key={list.name}
-                  className="text-main-color p-2 hover:text-title-color cursor-pointer"
+                  className="text-main-color p-1 hover:text-title-color cursor-pointer"
                 >
                   <a href={list.src}>
                     <i className="fa-regular fa-file-pdf mr-2"></i>

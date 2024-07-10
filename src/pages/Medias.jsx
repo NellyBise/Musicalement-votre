@@ -3,13 +3,13 @@ import { Outlet } from 'react-router-dom'
 
 export default function Medias() {
   return (
-    <section className="flex flex-col items-center my-12">
-      <p className="text-main-color text-xl my-4">
+    <section className="flex flex-col items-center my-12 mt-24">
+      <h2 className="text-4xl text-main-color font-bold uppercase my-12">
         Bienvenue dans la Médiathèque !
-      </p>
+      </h2>
       <p className="text-main-color text-l mb-12">
-        Explorez notre collection de photos, vidéos et musiques. Choisissez le
-        type de média que vous souhaitez découvrir :
+        Explorez ma collection de photos, vidéos et musiques. Choisissez le type
+        de média que vous souhaitez découvrir :
       </p>
       <nav className="mb-16">
         <ul className="flex gap-8 uppercase text-main-color text-xl">

@@ -33,7 +33,7 @@ export default function Music() {
   }
 
   return (
-    <article className="flex w-full my-12">
+    <article className="flex w-full max-w-[1440px] my-12">
       <div className="w-1/3 mx-4">
         <img src={photo} alt="Fabrice sur scène" className="rounded-md" />
       </div>

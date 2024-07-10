@@ -4,8 +4,8 @@ import guitar from '../assets/guitar.png'
 
 export default function Prestations() {
   return (
-    <section className="bg-[url('/music5.png')] bg-no-repeat bg-contain bg-top-left">
-      <article className="relative left-1/2 -translate-x-1/2 flex h-screen w-screen bg-light-color/85">
+    <section className="bg-[url('/music5.png')] bg-no-repeat bg-contain bg-top-left mt-20">
+      <article className="flex h-screen w-screen bg-light-color/85">
         <div className="w-1/2 relative">
           <div className="absolute h-0 w-0 border-r-[40vw] border-b-[90vh] border-b-light-blue border-r-transparent"></div>
           <ul className="text-main-color text-2xl flex flex-col justify-around mt-4 h-4/5 w-full">
@@ -32,7 +32,7 @@ export default function Prestations() {
             <img
               src={guitar}
               alt=""
-              className="absolute -bottom-16  w-72 z-40"
+              className="absolute -bottom-16  w-72 z-30"
             />
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function Prestations() {
             Vous cherchez une animation dynamique et personnalisée pour vos
             événements spéciaux ?
           </p>
-          <p className="text-title-color font-arabella text-6xl font-bold mt-4 w-full">
+          <p className="text-title-color font-arabella text-8xl font-bold mt-4 w-full">
             Musicalement Votre
           </p>
           <p className="mb-2">est là pour vous !</p>
@@ -52,19 +52,19 @@ export default function Prestations() {
           />
         </div>
       </article>
-      <div className="flex flex-col gap-4 mb-12">
-        <p className="text-main-color text-l">
+      <div className="flex flex-col text-main-color text-l font-semibold  mx-auto px-8 gap-4 mb-12 max-w-[1440px]">
+        <p>
           DJ, chanteur et animateur, je vous propose mes services pour animer
           avec passion et professionnalisme divers événements tels que mariages,
           anniversaires, comités des fêtes et campings.
         </p>
-        <p className="text-main-color text-l">
+        <p>
           Avec une playlist qui traverse les décennies, des années 80
           jusqu&rsquo;aux hits d&rsquo;aujourd&rsquo;hui en passant par des
           morceaux musette, je saurai parfaitement m&rsquo;adapter à vos goûts
           et à l&rsquo;ambiance que vous souhaitez créer.
         </p>
-        <p className="text-main-color text-l">
+        <p>
           Faites de votre prochain événement un moment inoubliable avec
           Musicalement Votre !
         </p>

@@ -9,7 +9,7 @@ export default function LinkCard(props) {
     >
       <div className="h-full">
         <img src={props.image} alt="" className="w-full h-2/3 object-cover" />
-        <div className="h-1/3 w-full text-main-color text-xl px-4 flex items-center justify-center">
+        <div className="h-1/3 w-full text-main-color text-center text-xl px-4 flex items-center justify-center">
           {props.text}
         </div>
       </div>
