@@ -5,8 +5,8 @@ import Card from '../components/Card'
 
 export default function Material() {
   return (
-    <section className="mt-24 max-h-[1440px] px-8">
-      <h2 className="flex justify-center text-4xl text-main-color font-bold uppercase my-12">
+    <section className="mt-24 max-w-[1440px] px-8">
+      <h2 className="flex justify-center text-4xl text-center text-main-color font-bold uppercase my-12">
         Un équipement professionnel
       </h2>
       <p className="text-main-color">
@@ -15,7 +15,7 @@ export default function Material() {
         événement, j&rsquo;adapte la configuration du matériel afin de garantir
         une qualité sonore et visuelle optimale.
       </p>
-      <div className="flex h-full gap-4 text-main-color text-l my-12">
+      <div className="flex flex-col md:flex-row h-full gap-4 text-main-color text-l my-12">
         <Card
           image={sound}
           text={

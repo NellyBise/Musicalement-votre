@@ -13,11 +13,31 @@ const playListKaraoke = [
     src: '/karaoke/repertoire-anglais.pdf',
     id: 1,
   },
+  {
+    name: 'Répertoire allemand',
+    src: '/karaoke/repertoire-allemand.pdf',
+    id: 2,
+  },
+  {
+    name: 'Répertoire espagnol',
+    src: '/karaoke/repertoire-espagnol.pdf',
+    id: 3,
+  },
+  {
+    name: 'Répertoire italien',
+    src: '/karaoke/repertoire-italien.pdf',
+    id: 4,
+  },
+  {
+    name: 'Répertoire néerlandais',
+    src: '/karaoke/repertoire-neerlandais.pdf',
+    id: 5,
+  },
 ]
 
 export default function Animation() {
   return (
-    <article className="flex gap-8 justify-center mb-12">
+    <article className="flex flex-col md:flex-row gap-8 justify-center mb-12 max-w-[1440px] px-8">
       <Card
         image={DJ}
         text={
@@ -58,16 +78,13 @@ export default function Animation() {
                   key={list.name}
                   className="text-main-color p-1 hover:text-title-color cursor-pointer"
                 >
-                  <a href={list.src}>
+                  <a href={list.src} target="_blank">
                     <i className="fa-regular fa-file-pdf mr-2"></i>
                     {list.name}
                   </a>
                 </li>
               ))}
             </ul>
-            <p className="text-title-color bg-light-blue">
-              ajouter les autres listes
-            </p>
           </div>
         }
       />

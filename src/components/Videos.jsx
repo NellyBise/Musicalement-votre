@@ -9,8 +9,7 @@ export default function Videos() {
         </h2>
         <div className="flex justify-center">
           <iframe
-            width="800"
-            height="450"
+            className="w-full h-96 md:w-[800px] md:h-[450px]"
             src="https://www.youtube.com/embed/zxrr9appK7M?si=j7DdQ6fVesqMd5TB"
             title="YouTube video player"
             frameborder="0"

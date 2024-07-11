@@ -3,8 +3,8 @@ import { Outlet } from 'react-router-dom'
 
 export default function Medias() {
   return (
-    <section className="flex flex-col items-center my-12 mt-24">
-      <h2 className="text-4xl text-main-color font-bold uppercase my-12">
+    <section className="flex flex-col items-center my-12 mt-24 max-w-[1440px] px-8">
+      <h2 className="text-4xl text-main-color text-center font-bold uppercase my-12">
         Bienvenue dans la Médiathèque !
       </h2>
       <p className="text-main-color text-l mb-12">

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 export default function Card(props) {
   return (
-    <div className="bg-light-blue w-1/3 h-full flex flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
+    <div className="bg-light-blue w-full md:w-1/2 h-full flex flex-col justify-center overflow-hidden rounded-xl drop-shadow-xl">
       <div className="h-72 w-full flex justify-center items-center">
         <img
           src={props.image}

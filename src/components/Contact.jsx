@@ -3,7 +3,7 @@ import notes from '../assets/musical-notes.svg'
 export default function Contact() {
   return (
     <article
-      className="flex flex-col items-center w-1/2 max-w-[700px] my-12 md:my-24 bg-[url('/music3.png')] bg-no-repeat bg-contain bg-center"
+      className="flex flex-col items-center w-full md:w-1/2 max-w-[700px] my-12 md:my-24 md:bg-[url('/music3.png')] bg-no-repeat bg-contain bg-center"
       id="contact"
     >
       <h2 className="flex gap-2 text-4xl w-full justify-center p-4 text-main-color font-bold bg-light-color/80 ">
