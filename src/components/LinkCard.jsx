@@ -5,7 +5,7 @@ export default function LinkCard(props) {
   return (
     <Link
       to={props.link}
-      className="md:w-1/3 h-72 overflow-hidden rounded-xl bg-white drop-shadow-xl hover:scale-105 duration-300"
+      className="md:w-1/3 h-72 md:h-96 overflow-hidden rounded-xl bg-white drop-shadow-xl hover:scale-105 duration-300"
     >
       <div className="h-full">
         <img

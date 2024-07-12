@@ -5,7 +5,7 @@ import Card from '../components/Card'
 
 export default function Material() {
   return (
-    <section className="mt-24 max-w-[1440px] px-8">
+    <section className="mt-24 max-w-[1440px] mx-auto px-8">
       <h2 className="flex justify-center text-4xl text-center text-main-color font-bold uppercase my-12">
         Un équipement professionnel
       </h2>

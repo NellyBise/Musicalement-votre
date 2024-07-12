@@ -4,7 +4,7 @@ import LinkCard from '../components/LinkCard'
 import prestations from '../assets/prestations.jpg'
 import materiel from '../assets/materiel.jpg'
 import mediatheque from '../assets/mediatheque.jpg'
-import notes from '../assets/musical-notes.svg'
+import notes from '../assets/musical-score.svg'
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         <li></li>
       </ul>
       <article className="flex flex-col items-center md:flex-row pb-20 h-max md:h-screen md:bg-[url('/music.png')] bg-no-repeat bg-contain">
-        <div className="px-8 md:w-3/5 h-3/5 flex flex-col my-auto items-center md:bg-gradient-to-r from-75% from-transparent to-light-color/80">
+        <div className="pl-6 md:px-8 md:w-3/5 h-3/5 flex flex-col my-auto items-center md:bg-gradient-to-r from-75% from-transparent to-light-color/80">
           <div className="h-96 w-80 md:h-full md:w-3/5 bg-light-blue relative">
             <img
               src={photo}
@@ -53,7 +53,7 @@ export default function Home() {
             </p>
           </div>
           <a
-            className="text-center w-max pointer-events-auto rounded bg-light-blue self-center md:self-end px-3 py-1 text-s lg:text-lg  drop-shadow-lg hover:bg-main-color hover:text-white duration-500"
+            className="text-center text-main-color font-semibold w-max pointer-events-auto rounded bg-light-blue self-center md:self-end px-3 py-1 text-s lg:text-lg  drop-shadow-lg hover:bg-main-color hover:text-white duration-500"
             href="mailto:musicalementvotre66@gmail.com"
             aria-label="cliquer pour envoyer un email"
           >
@@ -64,7 +64,7 @@ export default function Home() {
 
       <article className="my-12 max-w-[1440px] px-8">
         <h2 className="flex gap-2 justify-center text-4xl text-main-color font-bold uppercase mb-12">
-          <img src={notes} alt="" className="h-8" />
+          <img src={notes} alt="" className="h-12 pb-2" />
           actualités
         </h2>
         <p className="text-title-color bg-light-blue">
@@ -74,7 +74,7 @@ export default function Home() {
 
       <article className="my-12 max-w-[1440px] px-8">
         <h2 className="flex gap-2 justify-center text-4xl text-main-color font-bold uppercase mb-12">
-          <img src={notes} alt="" className="h-8" />
+          <img src={notes} alt="" className="h-12 pb-2" />
           En savoir plus
         </h2>
         <div className="flex flex-col md:flex-row gap-8">

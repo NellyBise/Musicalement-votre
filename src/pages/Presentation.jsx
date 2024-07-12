@@ -1,10 +1,10 @@
-import notes from '../assets/musical-notes.svg'
+import notes from '../assets/musical-score.svg'
 
 export default function Presentation() {
   return (
     <section className="flex flex-col items-center mt-24 max-w-[1440px] px-8">
       <h2 className="text-4xl text-center text-main-color font-bold uppercase my-12 flex gap-2">
-        <img src={notes} alt="" className="h-8" />
+        <img src={notes} alt="" className="h-12 pb-2" />
         Présentation
       </h2>
 
@@ -19,7 +19,7 @@ export default function Presentation() {
       ></iframe>
 
       <h2 className="flex gap-2 text-4xl text-main-color font-bold uppercase my-12">
-        <img src={notes} alt="" className="h-8" />
+        <img src={notes} alt="" className="h-12 pb-2" />
         MON PARCOURS
       </h2>
       <div className="flex flex-col text-main-color my-7 gap-4 max-w-[1440px]">
