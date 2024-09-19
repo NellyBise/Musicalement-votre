@@ -37,7 +37,7 @@ const playListKaraoke = [
 
 export default function Animation() {
   return (
-    <article className="flex flex-col md:flex-row gap-8 justify-center mb-12 max-w-[1440px] px-8">
+    <article className="flex flex-col mx-auto md:flex-row gap-8 justify-center mb-12 max-w-[1440px] px-8">
       <Card
         image={DJ}
         text={

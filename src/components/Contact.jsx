@@ -3,7 +3,7 @@ import notes from '../assets/musical-score.svg'
 export default function Contact() {
   return (
     <article
-      className=" w-full my-12 md:mt-24 md:bg-[url('/music2.png')] bg-no-repeat bg-contain bg-center"
+      className="w-full my-12 md:mt-24 md:bg-[url('/music2.png')] bg-no-repeat bg-contain bg-center"
       id="contact"
     >
       <div className="w-full bg-light-color/85 flex flex-col items-center">
@@ -11,9 +11,17 @@ export default function Contact() {
           <img src={notes} alt="" className="h-12 pb-2" />
           CONTACTEZ-MOI
         </h2>
-        <p className="text-sm lg:text-lg text-main-color my-7 leading-8 font-semibold">
-          Vous pouvez m'appeler au 06 13 06 05 09, m'envoyer un mail à
-          ​musicalementvotre66@gmail.com ou utiliser le formulaire
+        <p className="text-sm lg:text-lg text-secondary-color my-7 leading-8 font-semibold">
+          Vous pouvez m&rsquo;appeler au 06 13 06 05 09, m&rsquo;envoyer un mail
+          à{' '}
+          <a
+            className="text-main-color underline pointer-events-auto hover:bg-main-color hover:text-white duration-500"
+            href="mailto:​musicalementvotre66@gmail.com"
+            aria-label="cliquer pour envoyer un email"
+          >
+            ​musicalementvotre66@gmail.com
+          </a>{' '}
+          ou utiliser le formulaire
         </p>
         <form className="md:w-1/2 max-w-[700px] flex flex-col w-full px-6 text-main-color font-semibold">
           <label htmlFor="name">

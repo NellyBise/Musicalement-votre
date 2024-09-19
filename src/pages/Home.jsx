@@ -53,23 +53,13 @@ export default function Home() {
             </p>
           </div>
           <a
-            className="text-center text-main-color font-semibold w-max pointer-events-auto rounded bg-light-blue self-center md:self-end px-3 py-1 text-s lg:text-lg  drop-shadow-lg hover:bg-main-color hover:text-white duration-500"
+            className="text-center text-main-color font-semibold w-max pointer-events-auto rounded bg-light-blue self-center px-3 py-2 text-s lg:text-lg  drop-shadow-lg hover:bg-main-color hover:text-white duration-500"
             href="mailto:musicalementvotre66@gmail.com"
             aria-label="cliquer pour envoyer un email"
           >
             Contactez-moi !
           </a>
         </div>
-      </article>
-
-      <article className="my-12 max-w-[1440px] px-8">
-        <h2 className="flex gap-2 justify-center text-4xl text-main-color font-bold uppercase mb-12">
-          <img src={notes} alt="" className="h-12 pb-2" />
-          actualités
-        </h2>
-        <p className="text-title-color bg-light-blue">
-          Afficher les dernières dates ou lien posts facebook ?
-        </p>
       </article>
 
       <article className="my-12 max-w-[1440px] px-8">
