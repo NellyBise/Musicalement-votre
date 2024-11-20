@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Footer() {
   return (
     <footer className="text-center bg-main-color h-full p-4 text-lg lg:text-xl text-white z-10 relative">
@@ -35,7 +37,7 @@ export default function Footer() {
       </div>
       <p className="text-xs lg:text-sm">
         Musicalement Votre <span className="text-base lg:text-lg">©</span>{' '}
-        réalisé par Nelly Bise
+        réalisé par <Link to="https://www.nelly-bise.fr/">Nelly Bise</Link>
       </p>
     </footer>
   )
